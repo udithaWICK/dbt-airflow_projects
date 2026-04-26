@@ -45,13 +45,13 @@ with DAG(
 
     dbt_run_models = BashOperator(
     task_id="dbt_run_models",
-    bash_command="source /root/.venv/dbt-airflow/bin/activate && cd /root/cl-dbt/my_dbt_project && dbt run --profiles-dir /root/.dbt",
+    bash_command="source /root/.venv/dbt-airflow/bin/activate && cd /root/lh-d01/dbt/lh_analytics && dbt run --profiles-dir /root/.dbt",
     execution_timeout=timedelta(minutes=20),
 )
 
     dbt_test_models = BashOperator(
     task_id="dbt_test_models",
-    bash_command="source /root/.venv/dbt-airflow/bin/activate && cd /root/cl-dbt/my_dbt_project && dbt test --profiles-dir /root/.dbt",
+    bash_command="source /root/.venv/dbt-airflow/bin/activate && cd /root/lh-d01/dbt/lh_analytics && dbt test --profiles-dir /root/.dbt",
     execution_timeout=timedelta(minutes=20),
 )
 

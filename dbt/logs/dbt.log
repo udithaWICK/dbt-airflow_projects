@@ -30,3 +30,33 @@ Runtime Error
 [0m16:37:57.773007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003d966a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003e847470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003e00db20>]}
 [0m16:37:57.773559 [debug] [MainThread]: Flushing usage events
 [0m16:37:58.311870 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:16.168165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f534b2b5b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f534b4ee360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f534a6ee510>]}
+
+
+============================== 17:08:16.172212 | 49263995-cd87-4a77-ad5e-87516a460965 ==============================
+[0m17:08:16.172212 [info ] [MainThread]: Running with dbt=1.11.8
+[0m17:08:16.173152 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'empty': 'None', 'debug': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'profiles_dir': '/root/.dbt', 'quiet': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error': 'None', 'printer_width': '80', 'version_check': 'True', 'partial_parse': 'True', 'write_json': 'True', 'invocation_command': 'dbt init lh_analytics', 'static_parser': 'True', 'introspect': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'no_print': 'None'}
+[0m17:08:16.186921 [debug] [MainThread]: Starter project path: /root/.venv/dbt-airflow/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:08:16.195053 [info ] [MainThread]: 
+Your new dbt project "lh_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:08:16.195871 [info ] [MainThread]: Setting up your profile.
+[0m17:09:07.692821 [info ] [MainThread]: Profile lh_analytics written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:09:07.695171 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 51.59269, "process_in_blocks": "0", "process_kernel_time": 0.180247, "process_mem_max_rss": "108832", "process_out_blocks": "80", "process_user_time": 1.822505}
+[0m17:09:07.696168 [debug] [MainThread]: Command `dbt init` succeeded at 17:09:07.696021 after 51.59 seconds
+[0m17:09:07.696805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53497a2cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53496b8d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f534955f980>]}
+[0m17:09:07.697151 [debug] [MainThread]: Flushing usage events
+[0m17:09:08.240223 [debug] [MainThread]: An error was encountered while trying to flush usage events
